@@ -1,0 +1,11 @@
+#swal-minimized{
+    background-color: #c4c7ca; /* YOUR FAVORITE COLOR */
+}
+
+#swal-minimized-text{
+    /*
+        YOU CAN ADJUST THIS AS YOU NEED 
+    */
+    margin: -20px 10px;
+    padding-right:60px;
+}

@@ -1,0 +1,34 @@
+#swal-minimized{
+    display: none;
+    height:40px;
+    position: absolute;
+    background-color: #c4c7ca; /* YOUR FAVORITE COLOR */
+    border-radius:10px; 
+    filter: brightness(110%);
+    bottom: 5px;
+    left: 10px;
+    z-index: 990;
+    cursor:pointer;
+}
+
+#swal-minimized:hover{
+    filter: brightness(100%);
+}
+
+#swal-minimized:active{
+    filter: brightness(95%);
+}
+
+#swal-minimized-text{
+    /*
+        YOU CAN ADJUST THIS AS YOU NEED 
+    */
+    margin: -20px 10px;
+    padding-right:60px;
+}
+
+#swal-minimize{
+    display: flex; 
+    position: relative;
+    right:25px;
+}

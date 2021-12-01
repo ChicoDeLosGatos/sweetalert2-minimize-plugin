@@ -7,6 +7,8 @@ document.addEventListener("click", e => {
     }
 }, true);
 
+export_styles();
+
 $('#swal-minimized').on('click', ev => {
   const e = ev.originalEvent;
   if(e.target.id !== "deminify-btn"){
@@ -28,3 +30,40 @@ function swal_minimize () {
     $('.swal2-container.swal2-center.swal2-backdrop-show').show();
     $('#swal-minimized-text').html('');
   }
+
+  function export_styles() {
+    const Styles = `
+    #swal-minimized {
+      display: none;
+      height:40px;
+      position: absolute;
+      border-radius:10px; 
+      filter: brightness(110%);
+      bottom: 5px;
+      left: 10px;
+      z-index: 990;
+      background-color: #c4c7ca; 
+      cursor:pointer;
+    }
+
+    #swal-minimized:hover {
+        filter: brightness(100%);
+    }
+
+    #swal-minimized:active {
+        filter: brightness(95%);
+    }
+
+    #swal-minimize {
+        display: flex; 
+        position: relative;
+        right:25px;
+    }
+  `;
+
+    const style = document.createElement('style');
+    style.textContent = Styles;
+    document.head.append(style);
+  }
+  
+
